@@ -1,16 +1,91 @@
-# news_app
+# News App
 
-A new Flutter project.
+A modern Flutter news application that provides real-time news updates with a beautiful and responsive user interface. The app supports both English and Russian languages, features a dark/light theme, and allows users to save their favorite articles.
+
+## Features
+
+- 📰 Real-time news updates from various categories
+- 🌓 Dark and Light theme support
+- 🌐 Bilingual support (English/Russian)
+- ⭐ Favorite articles functionality
+- 📱 Responsive design for all screen sizes
+- 🔄 Pull-to-refresh functionality
+- 📄 Pagination support
+- 🖼️ Image caching for better performance
+- 🔍 Category-based news filtering
+
+## Categories
+
+- All
+- Politics
+- Economy
+- Social
+- Culture
+- Sports
+- Technology
+- Health
+- Science
+- Entertainment
+
+## Technical Details
+
+### Dependencies
+
+- `flutter`: The core Flutter framework
+- `provider`: For state management
+- `http`: For API calls
+- `shared_preferences`: For local storage
+- `cached_network_image`: For image caching
+- `url_launcher`: For opening news articles in browser
+- `intl`: For internationalization
+- `sqflite`: For local database (available but not currently used)
+
+### Architecture
+
+The app follows a clean architecture pattern with:
+- Models: Data structures and business logic
+- Services: API and database interactions
+- Providers: State management
+- Screens: UI components
+- Widgets: Reusable UI elements
+
+### Data Storage
+
+The app uses SharedPreferences for storing:
+- User preferences (theme, language)
+- Favorite articles
+- App settings
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repository:
+```bash
+git clone https://github.com/Matthew-Likhachev/newsApp.git
+```
 
-A few resources to get you started if this is your first Flutter project:
+2. Navigate to the project directory:
+```bash
+cd newsApp
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Install dependencies:
+```bash
+flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Run the app:
+```bash
+flutter run
+```
+
+## API Key
+
+The app uses the News API. You'll need to replace the API key in `lib/services/news_service.dart` with your own key from [News API](https://newsapi.org/).
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
